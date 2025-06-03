@@ -7,12 +7,14 @@ import 'primeflex/primeflex.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Quiz from './components/Quiz';
+import CreateQuiz from "./components/CreateQuiz";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+         <Route path="/create" element={<CreateQuiz/>} />
         <Route path="/quiz/:quizId" element={<Quiz />} />
       </Routes>
     </Router>
