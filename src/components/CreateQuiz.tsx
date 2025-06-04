@@ -62,7 +62,7 @@ const CreateQuiz = () =>{
 
         await axios.post('http://localhost:8080/quiz/create',{},{params:quizPayload }).then(
             response =>{
-                alert("created")
+                navigate(`/`)
             }
         ).catch(error=>{
             console.log("error",error)
